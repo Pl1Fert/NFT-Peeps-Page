@@ -1,0 +1,25 @@
+{
+  "name": "nft-peeps-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postcss": "postcss ./src/css/style.css --use autoprefixer --use postcss-import --dir public/css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">20%",
+      "not dead",
+      "last 2 versions"
+    ]
+  }
+}
