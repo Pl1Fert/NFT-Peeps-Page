@@ -6,16 +6,23 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     background-color: white;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
     padding: 0;
 }
@@ -29,7 +36,7 @@ ul {
 }
 
 .title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: var(--black-color);
 }
@@ -51,7 +58,7 @@ ul {
     color: var(--white-color) !important;
     border-radius: 12px;
     padding: 13px 40px;
-    transition: all .4s linear;
+    transition: all 0.4s linear;
 }
 
 .button:hover {
@@ -130,6 +137,10 @@ ul {
 
 /* Collection */
 
+.collection {
+    margin-bottom: 100px;
+}
+
 .collection__inner {
     text-align: center;
 }
@@ -168,4 +179,62 @@ ul {
 
 .colleсtion__item__text {
     margin-bottom: 35px;
+}
+
+/* Content */
+
+.content {
+    margin-bottom: 100px;
+}
+
+.content__main {
+    padding: 140px;
+    background-color: var(--beige-color);
+}
+
+.content__suptitle {
+    background-image: url(../../src/images/suptitle-circle-orange.svg);
+}
+
+.content__title {
+    font-size: 65px;
+    margin-bottom: 85px;
+}
+
+.content__item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey-color);
+    padding: 65px 0;
+}
+
+.content__item:first-child {
+    border-top: 1px solid var(--grey-color);
+}
+
+.content__tier {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.content__tier-row {
+    margin-top: 5px;
+}
+
+.content__tier-row img {
+    margin-left: 5px;
+}
+
+.content__data {
+    width: 35%;
+}
+
+.content__data__title {
+    margin-bottom: 30px;
+}
+
+.content-top-wave-bg {
+    margin-bottom: -5px;
 }
