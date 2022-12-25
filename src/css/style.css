@@ -21,10 +21,12 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: var(--black-color);
 }
 
 a {
@@ -35,22 +37,18 @@ ul {
     list-style: none;
 }
 
-.title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    color: var(--black-color);
+p {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    color: var(--grey-color);
 }
 
 .suptitle {
     font-weight: 700;
-    background: url(../../src/images/suptitle-circle.svg) no-repeat;
+    background: url(../../src/images/util-images/suptitle-circle.svg) no-repeat;
     background-position: 0 0;
     padding: 10px 0 5px 10px;
-}
-
-.text {
-    font-weight: 400;
-    color: var(--grey-color);
 }
 
 .button {
@@ -95,7 +93,7 @@ ul {
 
 .nav__link {
     color: var(--black-color);
-    transition: all .4s linear;
+    transition: all 0.4s linear;
 }
 
 .nav__link:hover {
@@ -115,7 +113,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../../src/images/top-section-bg.svg);
+    background-image: url(../../src/images/top/top-section-bg.svg);
     background-repeat: no-repeat;
 }
 
@@ -193,7 +191,7 @@ ul {
 }
 
 .content__suptitle {
-    background-image: url(../../src/images/suptitle-circle-orange.svg);
+    background-image: url(../../src/images/util-images/suptitle-circle-orange.svg);
 }
 
 .content__title {
@@ -232,9 +230,106 @@ ul {
 }
 
 .content__data__title {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .content-top-wave-bg {
     margin-bottom: -5px;
+}
+
+/* Roadmap */
+
+.roadmap {
+    margin-bottom: 100px;
+}
+
+.roadmap__inner {
+    text-align: center;
+}
+
+.roadmap__suptitle {
+    background-image: url(../../src/images/util-images/suptitle-circle-pink.svg);
+}
+
+.roadmap__title {
+    margin-bottom: 100px;
+    font-size: 65px;
+}
+
+.roadmap__progress {
+    margin-top: 100px;
+    display: flex;
+}
+
+.roadmap__progress span {
+    display: block;
+    background: url(../../src/images/util-images/suptitle-circle-pink.svg)
+        no-repeat;
+    width: 36px;
+    height: 36px;
+}
+
+.roadmap__progress p {
+    margin: 6px 0 0 10px;
+    font-family: "Montserrat", sans-serif;
+    color: var(--light-pink-color);
+}
+
+.roadmap__items {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    position: relative;
+}
+
+.roadmap-circles {
+    position: absolute;
+    top: 0;
+    right: 15%;
+    z-index: 1;
+}
+
+.two-standing-peeps {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: -10%;
+}
+
+.roadmap__item {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15%;
+}
+
+.roadmap__item:nth-child(2) {
+    background: url(../../src/images/roadmap/standing-peep.svg) no-repeat;
+    background-position: 100% 100%;
+}
+
+.roadmap__item:nth-child(4) {
+    background: url(../../src/images/roadmap/sitting-peep.svg) no-repeat;
+    background-position: 100% 100%;
+}
+
+.roadmap__info {
+    background-image: url(../../src/images/roadmap/roadmap-item-bg.svg);
+    background-repeat: no-repeat;
+    text-align: left;
+    min-height: 475px;
+    max-width: max-content;
+}
+
+.roadmap__info__content {
+    max-width: 325px;
+    margin: 100px 130px 100px 80px;
+}
+
+.roadmap__info__title {
+    margin-bottom: 25px;
+    font-size: 36px;
+}
+
+.roadmap__info__suptitle {
+    font-family: "Montserrat", sans-serif;
 }
