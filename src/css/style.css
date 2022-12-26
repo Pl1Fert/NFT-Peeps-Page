@@ -44,6 +44,10 @@ p {
     color: var(--grey-color);
 }
 
+section {
+    margin-bottom: 100px;
+}
+
 .suptitle {
     font-weight: 700;
     background: url(../../src/images/util-images/suptitle-circle.svg) no-repeat;
@@ -66,6 +70,11 @@ p {
 .container {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.section-title {
+    font-size: 65px;
+    margin-bottom: 90px;
 }
 
 /* Header */
@@ -104,7 +113,6 @@ p {
 
 .top {
     height: 100vh;
-    margin-bottom: 110px;
 }
 
 .top__inner {
@@ -135,17 +143,8 @@ p {
 
 /* Collection */
 
-.collection {
-    margin-bottom: 100px;
-}
-
 .collection__inner {
     text-align: center;
-}
-
-.collection__title {
-    font-size: 65px;
-    margin-bottom: 80px;
 }
 
 .collection__content {
@@ -181,10 +180,6 @@ p {
 
 /* Content */
 
-.content {
-    margin-bottom: 100px;
-}
-
 .content__main {
     padding: 140px;
     background-color: var(--beige-color);
@@ -192,11 +187,6 @@ p {
 
 .content__suptitle {
     background-image: url(../../src/images/util-images/suptitle-circle-orange.svg);
-}
-
-.content__title {
-    font-size: 65px;
-    margin-bottom: 85px;
 }
 
 .content__item {
@@ -239,21 +229,12 @@ p {
 
 /* Roadmap */
 
-.roadmap {
-    margin-bottom: 100px;
-}
-
 .roadmap__inner {
     text-align: center;
 }
 
 .roadmap__suptitle {
     background-image: url(../../src/images/util-images/suptitle-circle-pink.svg);
-}
-
-.roadmap__title {
-    margin-bottom: 100px;
-    font-size: 65px;
 }
 
 .roadmap__progress {
@@ -332,4 +313,52 @@ p {
 
 .roadmap__info__suptitle {
     font-family: "Montserrat", sans-serif;
+}
+
+/* Team */
+
+.team__main {
+    background-color: var(--very-light-pink-color);
+    padding: 110px 0;
+}
+
+.team-top-wave-bg {
+    margin-bottom: -6px;
+}
+
+.team__inner {
+    text-align: center;
+}
+
+.team__suptitle {
+    background-image: url(../../src/images/util-images/suptitle-circle-pink.svg);
+}
+
+.team__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 85px;
+}
+
+.team__member__image img {
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.team__member__image::before {
+    content:'';
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: 300px;
+    z-index: 0;
+    width: 294px;
+    height: 33px;
+    background: url(../../src/images/team/circle-under-team-member.svg) 0 0 no-repeat;
+}
+
+.team__member__name {
+    font-size: 36px;
 }
