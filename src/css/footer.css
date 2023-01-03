@@ -10,6 +10,13 @@
     z-index: 1;
 }
 
+@media screen and (max-width: 500px) {
+    .footer-circles {
+        width: 160px;
+        height: 160px;
+    }
+}
+
 .footer__inner {
     position: relative;
     z-index: 2;
